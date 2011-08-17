@@ -2828,7 +2828,8 @@ elimtype
        (seq (ia D s4 d0) (ia frame s5 (tuple (toggle b')))) y').
 2: elim CM7.
 2: elim
-    (CF2'' r3 r6 Frame frame (Tuple (toggle b') d0) (tuple (toggle b)) EQFf).2: elim A7.
+    (CF2'' r3 r6 Frame frame (Tuple (toggle b') d0) (tuple (toggle b)) EQFf).
+2: elim A7.
 auto.
 elim SUM1.
 elim
