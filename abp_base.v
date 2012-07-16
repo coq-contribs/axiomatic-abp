@@ -21,6 +21,8 @@
 (*                                abp_base.v                                *)
 (****************************************************************************)
 
+Global Set Asymmetric Patterns.
+
 Inductive act : Set :=
   | r1 : act
   | r2 : act
