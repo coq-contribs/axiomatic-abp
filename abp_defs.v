@@ -1356,49 +1356,49 @@ Hint Resolve neqtaur2 neqtaur3 neqtaur5 neqtaur6 neqtaus2 neqtaus3 neqtaus4
 Goal forall a : act, a = r2 -> In_ehlist a H.
 intros a b.
 unfold In_ehlist, H in |- *.
-auto with v62.
+auto.
 Save HLemmar2.
 
 Goal forall a : act, a = r3 -> In_ehlist a H.
 intros a b.
 unfold In_ehlist, H in |- *.
-auto with v62.
+auto.
 Save HLemmar3.
 
 Goal forall a : act, a = r5 -> In_ehlist a H.
 intros a b.
 unfold In_ehlist, H in |- *.
-auto with v62.
+auto.
 Save HLemmar5.
 
 Goal forall a : act, a = r6 -> In_ehlist a H.
 intros a b.
 unfold In_ehlist, H in |- *.
-auto with v62.
+auto.
 Save HLemmar6.
 
 Goal forall a : act, a = s2 -> In_ehlist a H.
 intros a b.
 unfold In_ehlist, H in |- *.
-auto 10 with v62.
+auto 10 .
 Save HLemmas2.
 
 Goal forall a : act, a = s3 -> In_ehlist a H.
 intros a b.
 unfold In_ehlist, H in |- *.
-auto 10 with v62.
+auto 10 .
 Save HLemmas3.
 
 Goal forall a : act, a = s5 -> In_ehlist a H.
 intros a b.
 unfold In_ehlist, H in |- *.
-auto 10 with v62.
+auto 10 .
 Save HLemmas5.
 
 Goal forall a : act, a = s6 -> In_ehlist a H.
 intros a b.
 unfold In_ehlist, H in |- *.
-auto 10 with v62.
+auto 10 .
 Save HLemmas6.
 
 
@@ -1425,63 +1425,63 @@ Hint Resolve HLemmar2 HLemmar3 HLemmar5 HLemmar6 HLemmas2 HLemmas3 HLemmas5
   HLemmas6 HLemma.
 
 Goal ~ In_ehlist r1 H.
-apply HLemma; auto with v62.
+apply HLemma; auto.
 Save Inr1H.
 
 Goal In_ehlist r2 H.
-auto with v62.
+auto.
 Save Inr2H.
 
 Goal In_ehlist r3 H.
-auto with v62.
+auto.
 Save Inr3H.
 
 Goal In_ehlist r5 H.
-auto with v62.
+auto.
 Save Inr5H.
 
 Goal In_ehlist r6 H.
-auto with v62.
+auto.
 Save Inr6H.
 
 Goal In_ehlist s2 H.
-auto with v62.
+auto.
 Save Ins2H.
 
 Goal In_ehlist s3 H.
-auto with v62.
+auto.
 Save Ins3H.
 
 Goal ~ In_ehlist s4 H.
-apply HLemma; auto with v62.
+apply HLemma; auto.
 Save Ins4H.
 
 Goal In_ehlist s5 H.
-auto with v62.
+auto.
 Save Ins5H.
 
 Goal In_ehlist s6 H.
-auto with v62.
+auto.
 Save Ins6H.
 
 Goal ~ In_ehlist int H.
-apply HLemma; auto with v62.
+apply HLemma; auto.
 Save InintH.
 
 Goal ~ In_ehlist c2 H.
-apply HLemma; auto with v62.
+apply HLemma; auto.
 Save Inc2H.
 
 Goal ~ In_ehlist c3 H. 
-apply HLemma; auto with v62.
+apply HLemma; auto.
 Save Inc3H. 
 
 Goal ~ In_ehlist c5 H. 
-apply HLemma; auto with v62.
+apply HLemma; auto.
 Save Inc5H. 
 
 Goal ~ In_ehlist c6 H. 
-apply HLemma; auto with v62.
+apply HLemma; auto.
 Save Inc6H. 
 
 Definition I' := ehcons c2 (ehcons c3 (ehcons c5 (ehcons c6 ehnil))).
