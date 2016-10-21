@@ -358,8 +358,8 @@ Hint Resolve G2 G5 G6 G7 G8 G9 G10 G11 G12 G13.
 Goal forall B : bool, true = B \/ false = B.
 intro.
 elim B.
-auto with v62.
-auto with v62.
+auto.
+auto.
 Save Lemma4.
 
 Section EXP2_.
